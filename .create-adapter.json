@@ -1,0 +1,65 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "atlantic-cozytouch",
+	"title": "Atlantic Wärmepumpe (Cozytouch)",
+	"description": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+	"keywords": [
+		"atlantic",
+		"austria",
+		"thermor",
+		"bwwp",
+		"cozytouch",
+		"cozybridge",
+		"overkiz",
+		"brauchwasserwärmepumpe"
+	],
+	"authorName": "kopierschnitte",
+	"authorGithub": "kopierschnitte",
+	"authorEmail": "chris@bispingweb.de",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "climate-control",
+	"startMode": "daemon",
+	"connectionType": "cloud",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "username",
+			"label": "Benutzername / eMail",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "password",
+			"label": "Kennwort",
+			"inputType": "text",
+			"defaultValue": ""
+		},
+		{
+			"key": "interval",
+			"label": "Abfrageinterval (sec)",
+			"inputType": "number",
+			"defaultValue": "120"
+		}
+	],
+	"language": "JavaScript",
+	"nodeVersion": "14",
+	"adminUi": "json",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "no",
+	"tools": [
+		"ESLint",
+		"type checking"
+	],
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.3.0"
+}

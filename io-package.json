@@ -1,0 +1,113 @@
+{
+	"common": {
+		"name": "atlantic-cozytouch",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Atlantic Wärmepumpe (Cozytouch)",
+		"titleLang": {
+			"en": "Atlantic Wärmepumpe (Cozytouch)",
+			"de": "Atlantic Wärmepumpe (Cozytouch)",
+			"ru": "Atlantic Wärmepumpe (Cozytouch)",
+			"pt": "Atlantic Wärmepumpe (Cozytouch)",
+			"nl": "Atlantic Wärmepumpe (Cozytouch)",
+			"fr": "Atlantic Wärmepumpe (Cozytouch)",
+			"it": "Atlantic Wärmepumpe (Cozytouch)",
+			"es": "Atlantic Wärmepumpe (Cozytouch)",
+			"pl": "Atlantic Wärmepumpe (Cozytouch)",
+			"zh-cn": "Atlantic Wärmepumpe (Cozytouch)"
+		},
+		"desc": {
+			"en": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"de": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"ru": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"pt": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"nl": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"fr": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"it": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"es": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"pl": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern",
+			"zh-cn": "Atlantic, Austria Email und Thermor Brauchwasserwärmepumpen über Cozytouch-Cloud steuern"
+		},
+		"authors": [
+			"kopierschnitte <chris@bispingweb.de>"
+		],
+		"keywords": [
+			"atlantic",
+			"austria",
+			"thermor",
+			"bwwp",
+			"cozytouch",
+			"cozybridge",
+			"overkiz",
+			"brauchwasserwärmepumpe"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "atlantic-cozytouch.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/kopierschnitte/ioBroker.atlantic-cozytouch/main/admin/atlantic-cozytouch.png",
+		"readme": "https://github.com/kopierschnitte/ioBroker.atlantic-cozytouch/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "climate-control",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"username": "",
+		"password": "",
+		"interval": "120"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
