@@ -81,6 +81,8 @@
 			}
 		]
 	},
+	"encryptedNative": ["password"],
+    "protectedNative": ["password"],
 	"native": {
 		"username": "",
 		"password": "",
