@@ -47,7 +47,7 @@
 		}
 	],
 	"language": "JavaScript",
-	"nodeVersion": "14",
+	"nodeVersion": "16",
 	"adminUi": "json",
 	"releaseScript": "yes",
 	"indentation": "Tab",
